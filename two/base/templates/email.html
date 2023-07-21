@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+
+    <title>Form</title>
+    <style>
+        .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+    </style>
+</head>
+<body>
+    <form action="sendMail/" method=POST >
+        {% csrf_token %}
+        <table class="center">
+            <tr>
+                <td>First Name: </td>
+                <td><input type="text" name="firstName" id=""></td>
+            </tr>
+
+            <tr>
+                <td>Last Name: </td>
+                <td><input type="text" name="secondName" id=""></td>
+            </tr>
+
+            <tr>
+                <td>E-mail: </td>
+                <td><input type="email" name="email" id=""></td>
+            </tr>
+
+            <tr>
+                <td>Phone Number: </td>
+                <td><input type="number" name="phoneNumber" id=""></td>
+            </tr>
+
+            <tr>
+                <td>Comment: </td>
+                <td><textarea name="comment" id="" cols="30" rows="10"></textarea></td>
+            </tr>
+
+            <tr><td></td><td><input type="submit" value="sumbit"></td></tr>
+        </table>
+    </form>
+    
+</body>
+</html>
