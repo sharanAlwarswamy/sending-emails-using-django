@@ -18,14 +18,15 @@ def sendMail(request):
     message = request.POST['comment']
     
         #got data from frontend 
-
+    courtesy = "ThankYou for your feedback :) \n Will get in touch shortly"
+    message = "~~'\n" + message + "\n'~~" + " \n \n \n " + courtesy
     # querry = app1_customer(firstName=firstName,secondName=secondName,email=email,message=message)
     # querry.save()
 
         # saved to db
     print(firstName +"  "+ secondName)
     send_mail(
-        'form Feedback1', #subject of the mail
+        'Feedback Form', #subject of the mail
         message,
         'sharanalwar57@gmail.com', # email addr of sender present in settings.py file
         [email], #recievers mailID

@@ -88,18 +88,22 @@ DATABASES = {
     #     'ENGINE': 'django.db.backends.sqlite3',
     #     'NAME': BASE_DIR / 'db.sqlite3',
     # }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     "OPTION": {
+    #         'init_command': "SET sql_mode='STRICT_TRANS_TABLES', innodb_strict_mode=1",
+    #         'charset': 'utf8mb4',
+    #         "autocommit": True,
+    #     },
+    #     'NAME': 'dbrds',
+    #     'USER': 'admin',
+    #     'PASSWORD':'password',
+    #     'HOST': 'db-instance.ccoah2ykdl7a.ap-south-1.rds.amazonaws.com' ,
+    #     'PORT':3306
+    # }
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        "OPTION": {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES', innodb_strict_mode=1",
-            'charset': 'utf8mb4',
-            "autocommit": True,
-        },
-        'NAME': 'dbrds',
-        'USER': 'admin',
-        'PASSWORD':'password',
-        'HOST': 'db-instance.ccoah2ykdl7a.ap-south-1.rds.amazonaws.com' ,
-        'PORT':3306
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
