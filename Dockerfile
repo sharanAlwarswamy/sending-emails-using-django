@@ -5,9 +5,9 @@ RUN apt-get update && apt-get install -y build-essential
 
 RUN pip install django
 
-COPY two .
+COPY sending-emails-using-django .
 
-RUN cd two
+RUN cd sending-emails-using-django/two/base
 
 RUN python3 manage.py migrate
 
