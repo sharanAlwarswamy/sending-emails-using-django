@@ -7,7 +7,9 @@ RUN pip install django
 
 COPY two .
 
-RUN cd two/base
+RUN cd two
+
+RUN cd base
 
 RUN python3 manage.py migrate
 
