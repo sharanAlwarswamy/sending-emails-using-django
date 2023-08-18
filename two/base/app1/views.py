@@ -30,7 +30,7 @@ def sendMail(request):
         message,
         'sharanalwar57@gmail.com', # email addr of sender present in settings.py file
         [email], #recievers mailID
-        fail_silently = False
+        fail_silently = True
         )
         #send to mail
 
